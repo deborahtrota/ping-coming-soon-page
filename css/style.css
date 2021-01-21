@@ -19,6 +19,7 @@ p{
 input{
   border-radius: 25px;
   outline-style: none;
+  box-shadow: none;
 }
 i{
   color: hsl(223, 87%, 63%);
@@ -78,6 +79,15 @@ ul{
 }
 .error{
   border-color: hsl(354, 100%, 66%);
+  border-width: 2px;
+}
+h6{
+  text-align: left;
+  margin: 0.5rem 2rem;
+  font-style: italic;
+  color: hsl(354, 100%, 66%);
+  font-weight: 300;
+  display: none;
 }
 
 @media (max-width: 375px){
