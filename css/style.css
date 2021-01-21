@@ -1,0 +1,95 @@
+body{
+  margin: 10% 25%;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+}
+h1, h5{
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+span{
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+p{
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+input{
+  border-radius: 25px;
+  outline-style: none;
+}
+i{
+  color: hsl(223, 87%, 63%);
+  font-size: 20px;
+  border-style: solid;
+  border-color: hsl(223, 100%, 88%);
+  border-radius: 50px;
+  border-width: 1px;
+  padding: 1rem;
+}
+i:hover{
+  color: #fff;
+  background-color: hsl(223, 87%, 63%);
+}
+
+li{
+  padding: 0 1rem;
+}
+ul{
+  list-style-type: none;
+  display: inline-flex;
+  flex-direction: row;
+  padding: 0;
+}
+.logo{
+  width: 20%;
+  margin-bottom: 2rem;
+}
+.email-subscribe{
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+}
+.email{
+  border-color: hsl(223, 100%, 88%);
+  border-width: 1px;
+  padding: 1rem 6rem;
+}
+.submit{
+  background-color: hsl(223, 87%, 63%);
+  border-style: none;
+  color: #fff;
+  padding: 1rem 4rem;
+}
+.illustration{
+  width: 100%;
+  margin: 3.5rem 0;
+}
+.fa-facebook-f{
+  padding: 1rem 1.2rem;
+}
+.attribution {
+  font-size: 11px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+.error{
+  border-color: hsl(354, 100%, 66%);
+}
+
+@media (max-width: 375px){
+  body{
+    margin: 25% 5%;
+    font-size: 12px;
+  }
+  input{
+    margin-bottom: 0.5rem;{
+    padding: 1rem 4rem;
+  }
+  .email-subscribe{
+    grid-template-columns: 1fr;
+  }
+}
