@@ -1,27 +1,32 @@
-body{
+body {
   margin: 10% 25%;
   text-align: center;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 20px;
 }
-h1, h5{
+
+h1, h5 {
   font-weight: 300;
   color: hsl(0, 0%, 59%);
 }
-span{
+
+span {
   font-weight: 700;
   color: hsl(209, 33%, 12%);
 }
-p{
+
+p {
   font-weight: 300;
   margin-bottom: 2rem;
 }
-input{
+
+input {
   border-radius: 25px;
   outline-style: none;
   box-shadow: none;
 }
-i{
+
+i {
   color: hsl(223, 87%, 63%);
   font-size: 20px;
   border-style: solid;
@@ -30,58 +35,68 @@ i{
   border-width: 1px;
   padding: 1rem;
 }
-i:hover{
+
+i:hover {
   color: #fff;
   background-color: hsl(223, 87%, 63%);
 }
 
-li{
+li {
   padding: 0 1rem;
 }
-ul{
+
+ul {
   list-style-type: none;
   display: inline-flex;
   flex-direction: row;
   padding: 0;
 }
-.logo{
+
+.logo {
   width: 20%;
   margin-bottom: 2rem;
 }
-.email-subscribe{
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr;
-}
-.email{
+.email {
   border-color: hsl(223, 100%, 88%);
   border-width: 1px;
-  padding: 1rem 6rem;
+  padding: 1rem 10rem;
+  max-width: 100%;
 }
-.submit{
+.email::-webkit-input-placeholder{
+  text-align: left;
+}
+.submit {
   background-color: hsl(223, 87%, 63%);
   border-style: none;
   color: #fff;
   padding: 1rem 4rem;
+  max-width: 100%;
 }
-.illustration{
+
+.illustration {
   width: 100%;
   margin: 3.5rem 0;
 }
-.fa-facebook-f{
+
+.fa-facebook-f {
   padding: 1rem 1.2rem;
 }
+
 .attribution {
   font-size: 11px;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
 }
-.error{
+
+.error {
   border-color: hsl(354, 100%, 66%);
   border-width: 2px;
 }
-h6{
+
+h6 {
   text-align: left;
   margin: 0.5rem 2rem;
   font-style: italic;
@@ -90,16 +105,24 @@ h6{
   display: none;
 }
 
-@media (max-width: 375px){
-  body{
+@media screen and (max-width: 800px){
+  body {
     margin: 25% 5%;
     font-size: 12px;
   }
-  input{
-    margin-bottom: 0.5rem;{
-    padding: 1rem 4rem;
+  h6{
+
   }
-  .email-subscribe{
-    grid-template-columns: 1fr;
+  input {
+    margin-bottom: 0.5rem;
+  }
+
+  .email {
+    padding: 1rem 4rem;
+    margin: 0;
+  }
+  .submit{
+    padding: 1rem 6.5rem;
+    margin-top: 0.5rem;
   }
 }
