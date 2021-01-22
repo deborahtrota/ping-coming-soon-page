@@ -1,5 +1,5 @@
 body {
-  margin: 10% 25%;
+  margin: 10% 20%;
   text-align: center;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 20px;
@@ -23,7 +23,10 @@ p {
 input {
   border-radius: 25px;
   outline-style: none;
-  box-shadow: none;
+  border-style: solid;
+}
+::-webkit-input-placeholder{
+  opacity: 0.6;
 }
 
 i {
@@ -50,6 +53,7 @@ ul {
   display: inline-flex;
   flex-direction: row;
   padding: 0;
+  margin-bottom: 2rem;
 }
 
 .logo {
@@ -59,18 +63,17 @@ ul {
 .email {
   border-color: hsl(223, 100%, 88%);
   border-width: 1px;
-  padding: 1rem 10rem;
-  max-width: 100%;
-}
-.email::-webkit-input-placeholder{
+  padding: 1rem 0.5rem;
+  width: 100%;
   text-align: left;
 }
 .submit {
   background-color: hsl(223, 87%, 63%);
   border-style: none;
   color: #fff;
-  padding: 1rem 4rem;
-  max-width: 100%;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  box-shadow: 1px 5px 1px 1px;
 }
 
 .illustration {
@@ -91,6 +94,8 @@ ul {
   text-decoration: none;
 }
 
+/*JS effects*/
+
 .error {
   border-color: hsl(354, 100%, 66%);
   border-width: 2px;
@@ -105,13 +110,15 @@ h6 {
   display: none;
 }
 
-@media screen and (max-width: 800px){
+/*Media*/
+
+@media screen and (max-width: 768px){
   body {
     margin: 25% 5%;
     font-size: 12px;
   }
   h6{
-
+    text-align: center;
   }
   input {
     margin-bottom: 0.5rem;
